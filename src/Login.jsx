@@ -86,7 +86,7 @@ const Login = () => {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="password">Password:</label>
+                    <label htmlFor="password">Password</label>
                     <div className="password-input-wrapper">
                         <input type={showPassword ? 'text' : 'password'} id="password" value={password} onChange={handlePassword} placeholder='Enter your password' required />
                         <div className="password-toggle" onClick={handleShowPassword}>

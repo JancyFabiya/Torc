@@ -39,46 +39,68 @@ input[type='text'] {
     color: white;
 }
 
+
+
+
 .password-toggle {
     position: absolute;
-    top: 58%;
-    right: 40%;
-    transform: translateY(20%);
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
     cursor: pointer;
-
     color: #525252;
-
-}
-
-@media (max-height: 500px) {
+  }
+  
+  .password-input-wrapper {
+    position: relative;
+  }
+  
+  @media (max-height: 500px) {
     .password-toggle {
-        top: calc(50% - 10px);
+      top: calc(50% - 8px);
     }
-}
-
-@media (max-height: 400px) {
+  }
+  
+  @media (max-height: 400px) {
     .password-toggle {
-        top: calc(50% - 15px);
+      top: calc(50% - 10px);
     }
-}
-
-@media (max-height: 300px) {
+  }
+  
+  @media (max-height: 300px) {
     .password-toggle {
-        top: calc(50% - 20px);
+      top: calc(50% - 12px);
     }
-}
+  }
+  
+  
 
 
 
 .checkbox-label {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
+
 }
 
-.checkbox-input {
-    margin-right: 5px;
-}
 
+
+.checkmark {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+  .checkbox-label span {
+    vertical-align: middle;
+  }
+  
 .checkbox-input:checked+.checkmark {
     background-color: #ffffff;
     border-color: #525252;
